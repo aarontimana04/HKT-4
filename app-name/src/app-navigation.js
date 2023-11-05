@@ -19,6 +19,10 @@ export const navigation = [
       {
         text: 'Groups',
         path: '/groups'
+      },
+      {
+        text: '/groups/',
+        path: '/groups'
       }
     ]
   }
