@@ -44,7 +44,7 @@ export default function Group() {
         <Column dataField="name" />
         
         {/* Define la tercera columna con el campo 'personCount' y un título personalizado 'Number of Persons'. */}
-        <Column dataField="personCount" caption="Number of Persons" />
+        {/* <Column dataField="personCount" caption="Number of Persons" /> */}
       </DataGrid>
 
   )

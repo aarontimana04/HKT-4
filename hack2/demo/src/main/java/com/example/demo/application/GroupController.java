@@ -9,6 +9,7 @@ import com.example.demo.domain.Group;
 import com.example.demo.domain.GroupService;
 import com.example.demo.domain.Persona;
 import com.example.demo.domain.PersonaService;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.util.HashSet;
 import java.util.List;
@@ -39,7 +40,7 @@ public class GroupController {
     
     return new ResponseEntity<>(savedGroup, HttpStatus.CREATED);
 }
-
+    @JsonIgnore
     @GetMapping
     public ResponseEntity<List<Group>> groups() {
         List<Group> groups = groupService.findAllgroups();
